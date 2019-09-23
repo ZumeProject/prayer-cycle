@@ -81,11 +81,11 @@ export default {
         },
         {
           name: "SING",
-          description: "Sing songs of praise or worship or another hymn or spiritual song. Meditate: Ask the Lord to speak to you. Have a pen and paper ready to record impressions He gives you.",
+          description: "Sing songs of praise or worship or another hymn or spiritual song.",
           active: false
         },
         {
-          name: "MEDIATE",
+          name: "MEDITATE",
           description: "Ask the Lord to speak to you. Have a pen and paper ready to record impressions He gives you.",
           active: false
         },
@@ -96,7 +96,7 @@ export default {
         },
         {
           name: "PRAISE",
-          description: "raise the Lord for the time you have had to spend with Him and the impressions He has given you. Praise Him for His glorious attributes.",
+          description: "Praise the Lord for the time you have had to spend with Him and the impressions He has given you. Praise Him for His glorious attributes.",
           active: false
         }
       ],
