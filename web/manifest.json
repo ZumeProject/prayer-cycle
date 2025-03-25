@@ -1,11 +1,11 @@
 {
-    "name": "Zúme List of 100",
-    "short_name": "List of 100",
+    "name": "Prayer Cycle",
+    "short_name": "Prayer Cycle",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "A Prayer Cycle app to support prayer activities.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
