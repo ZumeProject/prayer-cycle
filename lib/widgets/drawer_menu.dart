@@ -25,15 +25,6 @@ class DrawerMenu extends StatelessWidget {
               Navigator.pushReplacementNamed(context, '/home');
             },
           ),
-          _buildMenuItem(
-            context,
-            icon: Icons.delete_forever,
-            title: localizations.deleteAll,
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.pushNamed(context, '/delete_all');
-            },
-          ),
           const Divider(),
           _buildMenuItem(
             context,
