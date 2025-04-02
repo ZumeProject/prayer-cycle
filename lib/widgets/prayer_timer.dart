@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import '../l10n/app_localizations.dart';
+import '../utils/app_theme.dart';
 
 class PrayerTimer extends StatefulWidget {
   const PrayerTimer({super.key});
@@ -252,6 +253,9 @@ class _PrayerTimerState extends State<PrayerTimer> {
               else
                 ElevatedButton(
                   onPressed: _pauseTimer,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppTheme.errorColor,
+                  ),
                   child: Text(localizations.stopButton),
                 ),
             ],
