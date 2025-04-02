@@ -1,0 +1,49 @@
+{
+  "@@locale": "no",
+  "app_title": "Bønnesyklus",
+  "home_title": "Bønnesyklus",
+  "language": "Språk",
+  "language_selection": "Velg Språk",
+  "about": "Om",
+  "about_title": "Om",
+  "about_app_title": "Om denne Appen",
+  "about_app_description1": "Denne appen hjelper deg å be i en time.",
+  "about_app_description2": "Denne enkle appen er gratis. Alle data som samles her forblir på telefonen din og deles ikke med noen andre.",
+  "visit_zume_training": "Besøk Bønnesyklus",
+  "segment_counter": "Segment {segment} / 12",
+  "@segment_counter": {
+    "placeholders": {
+      "segment": {
+        "type": "int"
+      }
+    }
+  },
+  "start_button": "Start",
+  "stop_button": "Stopp",
+  "about_prayer_cycle": "Om Bønnesyklus",
+  "about_description": "Bønnesyklus er en enkel app som hjelper deg å be i en time.",
+  "praise_title": "LOVPRISNING",
+  "praise_description": "Start bønnetimen din ved å prise Herren. Pris Ham for ting som er i tankene dine nå. Pris Ham for én spesiell ting Han har gjort i livet ditt i løpet av den siste uken. Pris Ham for Hans godhet mot familien din.",
+  "wait_title": "VENT",
+  "wait_description": "Bruk tid på å vente på Herren. Vær stille og la Ham samle tanker for deg.",
+  "confess_title": "BEKENN",
+  "confess_description": "Be Den hellige ånd vise deg alt i livet ditt som kan være ubehagelig for Ham. Be Ham påpeke holdninger som er gale, samt spesifikke handlinger du ennå ikke har bedt en bønn om bekjennelse for. Bekjenn nå dette for Herren så du kan bli renset.",
+  "read_word_title": "LES ORDET",
+  "read_word_description": "Bruk tid på å lese i Salmene, hos profetene eller bønneavsnitt i Det nye testamente.",
+  "ask_title": "BE",
+  "ask_description": "Framfør bønner på dine egne vegne.",
+  "intercession_title": "FORBØNN",
+  "intercession_description": "Framfør bønner på andres vegne.",
+  "pray_word_title": "BE ORDET",
+  "pray_word_description": "Be spesifikke avsnitt. Bibelske bønner samt en rekke Salmer egner seg godt til dette formålet.",
+  "thank_title": "TAKK",
+  "thank_description": "Gi takk til Herren for ting i livet ditt, på dine familiemedlemmers vegne og på din menighets vegne.",
+  "sing_title": "SYNG",
+  "sing_description": "Syng lovsanger eller tilbedelsessanger, eller en annen salme eller åndelig sang.",
+  "meditate_title": "MEDITER",
+  "meditate_description": "Be Herren om å tale til deg. Ha penn og papir klar til å notere inntrykk Han gir deg.",
+  "listen_title": "LYTT",
+  "listen_description": "Bruk tid på å sammenføye ting du har lest, ting du har bedt for og ting du har sunget, og se hvordan Herren bringer alt sammen for å tale til deg.",
+  "praise_end_title": "LOVPRISNING",
+  "praise_end_description": "Pris Herren for tiden du har fått tilbringe med Ham og for inntrykkene Han har gitt deg. Pris Ham for Hans herlige egenskaper."
+} 

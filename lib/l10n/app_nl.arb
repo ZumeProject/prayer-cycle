@@ -1,0 +1,49 @@
+{
+  "@@locale": "nl",
+  "app_title": "Gebedscyclus",
+  "home_title": "Gebedscyclus",
+  "language": "Taal",
+  "language_selection": "Selecteer Taal",
+  "about": "Over",
+  "about_title": "Over",
+  "about_app_title": "Over deze App",
+  "about_app_description1": "Deze app helpt je een uur te bidden.",
+  "about_app_description2": "Deze eenvoudige app is gratis. Alle hier verzamelde gegevens blijven op je telefoon en worden met niemand gedeeld.",
+  "visit_zume_training": "Bezoek Gebedscyclus",
+  "segment_counter": "Segment {segment} van 12",
+  "@segment_counter": {
+    "placeholders": {
+      "segment": {
+        "type": "int"
+      }
+    }
+  },
+  "start_button": "Start",
+  "stop_button": "Stop",
+  "about_prayer_cycle": "Over Gebedscyclus",
+  "about_description": "Gebedscyclus is een eenvoudige app die je helpt een uur te bidden.",
+  "praise_title": "LOF",
+  "praise_description": "Begin je gebedsuur door de Heer te prijzen. Prijs Hem voor dingen die nu in je gedachten zijn. Prijs Hem voor één speciaal ding dat Hij de afgelopen week in je leven heeft gedaan. Prijs Hem voor Zijn goedheid voor je gezin.",
+  "wait_title": "WACHT",
+  "wait_description": "Besteed tijd aan wachten op de Heer. Wees stil en laat Hem gedachten voor je verzamelen.",
+  "confess_title": "BELIJDEN",
+  "confess_description": "Vraag de Heilige Geest om je te laten zien wat in je leven Hem mogelijk niet behaagt. Vraag Hem om verkeerde houdingen aan te wijzen, evenals specifieke daden waarvoor je nog geen gebed van belijdenis hebt gedaan. Belijd dat nu aan de Heer zodat je gereinigd kunt worden.",
+  "read_word_title": "LEES HET WOORD",
+  "read_word_description": "Besteed tijd aan het lezen in de Psalmen, in de profeten of passages over gebed in het Nieuwe Testament.",
+  "ask_title": "VRAAG",
+  "ask_description": "Doe verzoeken namens jezelf.",
+  "intercession_title": "VOORBEDE",
+  "intercession_description": "Doe verzoeken namens anderen.",
+  "pray_word_title": "BID HET WOORD",
+  "pray_word_description": "Bid specifieke passages. Schriftuurlijke gebeden en een aantal Psalmen lenen zich goed voor dit doel.",
+  "thank_title": "DANK",
+  "thank_description": "Dank de Heer voor de dingen in je leven, namens je gezin en namens je kerk.",
+  "sing_title": "ZING",
+  "sing_description": "Zing lof- of aanbiddingsliederen of een ander geestelijk lied.",
+  "meditate_title": "MEDITATIE",
+  "meditate_description": "Vraag de Heer om tot je te spreken. Houd pen en papier klaar om indrukken die Hij je geeft op te schrijven.",
+  "listen_title": "LUISTER",
+  "listen_description": "Besteed tijd aan het samenvoegen van de dingen die je hebt gelezen, waar je voor hebt gebeden en wat je hebt gezongen, en zie hoe de Heer ze allemaal samenbrengt om tot je te spreken.",
+  "praise_end_title": "LOF",
+  "praise_end_description": "Pries de Heer voor de tijd die je met Hem hebt doorgebracht en de indrukken die Hij je heeft gegeven. Prijs Hem voor Zijn heerlijke eigenschappen."
+} 
