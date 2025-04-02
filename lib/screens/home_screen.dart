@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../l10n/app_localizations.dart';
 import '../widgets/drawer_menu.dart';
 import '../widgets/language_selector.dart';
+import '../widgets/prayer_timer.dart';
 
 class HomeScreen extends StatelessWidget {
   final Function(Locale)? setLocale;
@@ -24,9 +25,7 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       drawer: DrawerMenu(setLocale: setLocale),
-      body: const Center(
-        child: Text('Welcome to Prayer Cycle'),
-      ),
+      body: const PrayerTimer(),
     );
   }
 } 
