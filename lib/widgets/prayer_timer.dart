@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import '../l10n/app_localizations.dart';
 
 class PrayerTimer extends StatefulWidget {
   const PrayerTimer({super.key});
@@ -10,73 +11,92 @@ class PrayerTimer extends StatefulWidget {
 }
 
 class _PrayerTimerState extends State<PrayerTimer> {
-  final List<Map<String, String>> _segments = [
-    {
-      'title': 'PRAISE',
-      'description': 'Start your prayer hour by praising the Lord. Praise Him for things that are on your mind right now. Praise Him for one special thing He has done in your life in the past week. Praise Him for His goodness to your family.',
-    },
-    {
-      'title': 'WAIT',
-      'description': 'Spend time waiting on the Lord. Be silent and let Him pull together reflections for you.',
-    },
-    {
-      'title': 'CONFESS',
-      'description': 'Ask the Holy Spirit to show you anything in your life that might be displeasing to Him. Ask Him to point out attitudes that are wrong, as well as specific acts for which you have not yet made a prayer of confession. Now confess that to the Lord so that you might be cleansed.',
-    },
-    {
-      'title': 'READ THE WORD',
-      'description': 'Spend time reading in the Psalms, in the prophets, or passages on prayer located in the New Testament.',
-    },
-    {
-      'title': 'ASK',
-      'description': 'Make requests on behalf of yourself.',
-    },
-    {
-      'title': 'INTERCESSION',
-      'description': 'Make requests on behalf of others.',
-    },
-    {
-      'title': 'PRAY THE WORD',
-      'description': 'Pray specific passages. Scriptural prayers as well as a number of Psalms lend themselves well to this purpose.',
-    },
-    {
-      'title': 'THANK',
-      'description': 'Give thanks to the Lord for the things in your life, on behalf of your family, and on behalf of your church.',
-    },
-    {
-      'title': 'SING',
-      'description': 'Sing songs of praise or worship or another hymn or spiritual song.',
-    },
-    {
-      'title': 'MEDITATE',
-      'description': 'Ask the Lord to speak to you. Have a pen and paper ready to record impressions He gives you.',
-    },
-    {
-      'title': 'LISTEN',
-      'description': 'Spend time merging the things you have read, things you have prayed and things you have sung and see how the Lord brings them all together to speak to you.',
-    },
-    {
-      'title': 'PRAISE',
-      'description': 'Praise the Lord for the time you have had to spend with Him and the impressions He has given you. Praise Him for His glorious attributes.',
-    },
-  ];
-
+  late final List<Map<String, dynamic>> _segments;
   int _currentSegment = 0;
   int _timeRemaining = 300; // 5 minutes in seconds
   bool _isRunning = false;
   Timer? _timer;
   final AudioPlayer _audioPlayer = AudioPlayer();
+  final PageController _pageController = PageController();
 
   @override
   void initState() {
     super.initState();
     _loadBeepSound();
+    _initializeSegments();
+  }
+
+  void _initializeSegments() {
+    final localizations = AppLocalizations.of(context);
+    _segments = [
+      {
+        'title': localizations.praiseTitle,
+        'description': localizations.praiseDescription,
+        'image': 'assets/section-images/1.praise.png',
+      },
+      {
+        'title': localizations.waitTitle,
+        'description': localizations.waitDescription,
+        'image': 'assets/section-images/2.wait.png',
+      },
+      {
+        'title': localizations.confessTitle,
+        'description': localizations.confessDescription,
+        'image': 'assets/section-images/3.confess.png',
+      },
+      {
+        'title': localizations.readWordTitle,
+        'description': localizations.readWordDescription,
+        'image': 'assets/section-images/4.read-the-word.png',
+      },
+      {
+        'title': localizations.askTitle,
+        'description': localizations.askDescription,
+        'image': 'assets/section-images/5.ask.png',
+      },
+      {
+        'title': localizations.intercessionTitle,
+        'description': localizations.intercessionDescription,
+        'image': 'assets/section-images/6.intercession.png',
+      },
+      {
+        'title': localizations.prayWordTitle,
+        'description': localizations.prayWordDescription,
+        'image': 'assets/section-images/7.pray-the-word.png',
+      },
+      {
+        'title': localizations.thankTitle,
+        'description': localizations.thankDescription,
+        'image': 'assets/section-images/8.thanks.png',
+      },
+      {
+        'title': localizations.singTitle,
+        'description': localizations.singDescription,
+        'image': 'assets/section-images/9.sing.png',
+      },
+      {
+        'title': localizations.meditateTitle,
+        'description': localizations.meditateDescription,
+        'image': 'assets/section-images/10.meditate.png',
+      },
+      {
+        'title': localizations.listenTitle,
+        'description': localizations.listenDescription,
+        'image': 'assets/section-images/11.listen.png',
+      },
+      {
+        'title': localizations.praiseEndTitle,
+        'description': localizations.praiseEndDescription,
+        'image': 'assets/section-images/12.praise.png',
+      },
+    ];
   }
 
   @override
   void dispose() {
     _timer?.cancel();
     _audioPlayer.dispose();
+    _pageController.dispose();
     super.dispose();
   }
 
@@ -100,7 +120,13 @@ class _PrayerTimerState extends State<PrayerTimer> {
           if (_currentSegment < _segments.length - 1) {
             _currentSegment++;
             _timeRemaining = 300;
-            _startTimer();
+            _pageController.animateToPage(
+              _currentSegment,
+              duration: const Duration(milliseconds: 300),
+              curve: Curves.easeInOut,
+            ).then((_) {
+              _startTimer();
+            });
           }
         }
       });
@@ -118,6 +144,7 @@ class _PrayerTimerState extends State<PrayerTimer> {
     _timer?.cancel();
     setState(() {
       _currentSegment = 0;
+      _pageController.jumpToPage(0);
       _timeRemaining = 300;
       _isRunning = false;
     });
@@ -133,15 +160,55 @@ class _PrayerTimerState extends State<PrayerTimer> {
     return '${minutes.toString().padLeft(2, '0')}:${remainingSeconds.toString().padLeft(2, '0')}';
   }
 
+  Widget _buildSegmentPage(int index) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.surfaceContainerHighest,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(8),
+            child: Image.asset(
+              _segments[index]['image'] as String,
+              height: 200,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            _segments[index]['title'] as String,
+            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 16),
+          Text(
+            _segments[index]['description'] as String,
+            textAlign: TextAlign.center,
+            style: Theme.of(context).textTheme.bodyLarge,
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
+    final localizations = AppLocalizations.of(context);
+    
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'Segment ${_currentSegment + 1} of 12',
+            localizations.segmentCounter(_currentSegment + 1),
             style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(height: 20),
@@ -150,29 +217,23 @@ class _PrayerTimerState extends State<PrayerTimer> {
             style: Theme.of(context).textTheme.displayLarge,
           ),
           const SizedBox(height: 20),
-          Container(
-            padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.surfaceContainerHighest,
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Column(
-              children: [
-                Text(
-                  _segments[_currentSegment]['title']!,
-                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: Theme.of(context).colorScheme.primary,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  _segments[_currentSegment]['description']!,
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.bodyLarge,
-                ),
-              ],
+          Expanded(
+            child: PageView.builder(
+              controller: _pageController,
+              onPageChanged: (index) {
+                setState(() {
+                  _currentSegment = index;
+                  _timeRemaining = 300; // Reset to 5 minutes
+                  if (_isRunning) {
+                    _timer?.cancel();
+                    _isRunning = false;
+                  }
+                });
+              },
+              itemCount: _segments.length,
+              itemBuilder: (context, index) {
+                return _buildSegmentPage(index);
+              },
             ),
           ),
           const SizedBox(height: 20),
@@ -182,18 +243,16 @@ class _PrayerTimerState extends State<PrayerTimer> {
               if (!_isRunning)
                 ElevatedButton(
                   onPressed: _startTimer,
-                  child: const Text('Start'),
+                  child: Text(localizations.startButton),
                 )
               else
                 ElevatedButton(
                   onPressed: _pauseTimer,
-                  child: const Text('Pause'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Theme.of(context).colorScheme.error,
+                  ),
+                  child: Text(localizations.stopButton),
                 ),
-              const SizedBox(width: 16),
-              ElevatedButton(
-                onPressed: _resetTimer,
-                child: const Text('Reset'),
-              ),
             ],
           ),
         ],
