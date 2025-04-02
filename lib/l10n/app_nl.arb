@@ -45,5 +45,22 @@
   "listen_title": "LUISTER",
   "listen_description": "Besteed tijd aan het samenvoegen van de dingen die je hebt gelezen, waar je voor hebt gebeden en wat je hebt gezongen, en zie hoe de Heer ze allemaal samenbrengt om tot je te spreken.",
   "praise_end_title": "LOF",
-  "praise_end_description": "Pries de Heer voor de tijd die je met Hem hebt doorgebracht en de indrukken die Hij je heeft gegeven. Prijs Hem voor Zijn heerlijke eigenschappen."
+  "praise_end_description": "Pries de Heer voor de tijd die je met Hem hebt doorgebracht en de indrukken die Hij je heeft gegeven. Prijs Hem voor Zijn heerlijke eigenschappen.",
+  "profile_title": "Profiel",
+  "delete_all_title": "Alles Verwijderen",
+  "unbeliever": "Ongelovige",
+  "believer": "Gelovige",
+  "unknown": "Onbekend",
+  "add_person_hint": "Voeg een persoon toe om voor te bidden",
+  "save": "Opslaan",
+  "cancel": "Annuleren",
+  "delete": "Verwijderen",
+  "delete_confirmation": "Weet je zeker dat je dit wilt verwijderen?",
+  "delete_all": "Alles Verwijderen",
+  "delete_all_confirmation": "Weet je zeker dat je alles wilt verwijderen?",
+  "yes": "Ja",
+  "no": "Nee",
+  "menu": "Menu",
+  "home": "Home",
+  "profile": "Profiel"
 } 

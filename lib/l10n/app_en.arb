@@ -45,5 +45,22 @@
   "listen_title": "LISTEN",
   "listen_description": "Spend time merging the things you have read, things you have prayed and things you have sung and see how the Lord brings them all together to speak to you.",
   "praise_end_title": "PRAISE",
-  "praise_end_description": "Praise the Lord for the time you have had to spend with Him and the impressions He has given you. Praise Him for His glorious attributes."
+  "praise_end_description": "Praise the Lord for the time you have had to spend with Him and the impressions He has given you. Praise Him for His glorious attributes.",
+  "profile_title": "Profile",
+  "delete_all_title": "Delete All",
+  "unbeliever": "Unbeliever",
+  "believer": "Believer",
+  "unknown": "Unknown",
+  "add_person_hint": "Add a person to pray for",
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "delete_confirmation": "Are you sure you want to delete this?",
+  "delete_all": "Delete All",
+  "delete_all_confirmation": "Are you sure you want to delete everything?",
+  "yes": "Yes",
+  "no": "No",
+  "menu": "Menu",
+  "home": "Home",
+  "profile": "Profile"
 } 

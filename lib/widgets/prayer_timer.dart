@@ -248,11 +248,17 @@ class _PrayerTimerState extends State<PrayerTimer> {
               else
                 ElevatedButton(
                   onPressed: _pauseTimer,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Theme.of(context).colorScheme.error,
-                  ),
                   child: Text(localizations.stopButton),
                 ),
+              const SizedBox(width: 16),
+              ElevatedButton(
+                onPressed: _resetTimer,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).colorScheme.error,
+                  foregroundColor: Theme.of(context).colorScheme.onError,
+                ),
+                child: const Text('Reset'),
+              ),
             ],
           ),
         ],

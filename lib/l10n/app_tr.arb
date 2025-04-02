@@ -45,5 +45,22 @@
   "listen_title": "DİNLEME",
   "listen_description": "Okuduğunuz, dua ettiğiniz ve söylediğiniz şeyleri birleştirmeye zaman ayırın ve Rab'in bunları nasıl bir araya getirip size konuştuğunu görün.",
   "praise_end_title": "ÖVME",
-  "praise_end_description": "O'nunla geçirdiğiniz zaman ve size verdiği izlenimler için Rab'bi övün. O'nun yüce özellikleri için O'nu övün."
+  "praise_end_description": "O'nunla geçirdiğiniz zaman ve size verdiği izlenimler için Rab'bi övün. O'nun yüce özellikleri için O'nu övün.",
+  "profile_title": "Profil",
+  "delete_all_title": "Tümünü Sil",
+  "unbeliever": "İmansız",
+  "believer": "İmanlı",
+  "unknown": "Bilinmiyor",
+  "add_person_hint": "Dua edilecek kişi ekle",
+  "save": "Kaydet",
+  "cancel": "İptal",
+  "delete": "Sil",
+  "delete_confirmation": "Bunu silmek istediğinizden emin misiniz?",
+  "delete_all": "Tümünü Sil",
+  "delete_all_confirmation": "Her şeyi silmek istediğinizden emin misiniz?",
+  "yes": "Evet",
+  "no": "Hayır",
+  "menu": "Menü",
+  "home": "Ana Sayfa",
+  "profile": "Profil"
 } 

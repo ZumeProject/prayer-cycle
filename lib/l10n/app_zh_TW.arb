@@ -45,5 +45,22 @@
   "listen_title": "聆聽",
   "listen_description": "花時間將您所讀的、所禱告的和所唱的結合起來，看看主如何將它們全部整合起來向您說話。",
   "praise_end_title": "讚美",
-  "praise_end_description": "為與主共處的時間和祂給您的感動讚美主。為祂榮耀的屬性讚美祂。"
+  "praise_end_description": "為與主共度的時間和祂給你的感動讚美主。為祂榮耀的屬性讚美祂。",
+  "profile_title": "個人資料",
+  "delete_all_title": "刪除全部",
+  "unbeliever": "非信徒",
+  "believer": "信徒",
+  "unknown": "未知",
+  "add_person_hint": "添加代禱對象",
+  "save": "保存",
+  "cancel": "取消",
+  "delete": "刪除",
+  "delete_confirmation": "確定要刪除嗎？",
+  "delete_all": "刪除全部",
+  "delete_all_confirmation": "確定要刪除所有內容嗎？",
+  "yes": "是",
+  "no": "否",
+  "menu": "選單",
+  "home": "主頁",
+  "profile": "個人資料"
 } 

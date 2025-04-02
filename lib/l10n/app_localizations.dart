@@ -89,6 +89,33 @@ class AppLocalizations {
   String get aboutAppDescription1 => _gen.about_app_description1;
   String get aboutAppDescription2 => _gen.about_app_description2;
   String get visitZumeTraining => _gen.visit_zume_training;
+  String get startButton => _gen.start_button;
+  String get stopButton => _gen.stop_button;
+  String get praiseTitle => _gen.praise_title;
+  String get praiseDescription => _gen.praise_description;
+  String get waitTitle => _gen.wait_title;
+  String get waitDescription => _gen.wait_description;
+  String get confessTitle => _gen.confess_title;
+  String get confessDescription => _gen.confess_description;
+  String get readWordTitle => _gen.read_word_title;
+  String get readWordDescription => _gen.read_word_description;
+  String get askTitle => _gen.ask_title;
+  String get askDescription => _gen.ask_description;
+  String get intercessionTitle => _gen.intercession_title;
+  String get intercessionDescription => _gen.intercession_description;
+  String get prayWordTitle => _gen.pray_word_title;
+  String get prayWordDescription => _gen.pray_word_description;
+  String get thankTitle => _gen.thank_title;
+  String get thankDescription => _gen.thank_description;
+  String get singTitle => _gen.sing_title;
+  String get singDescription => _gen.sing_description;
+  String get meditateTitle => _gen.meditate_title;
+  String get meditateDescription => _gen.meditate_description;
+  String get listenTitle => _gen.listen_title;
+  String get listenDescription => _gen.listen_description;
+  String get praiseEndTitle => _gen.praise_end_title;
+  String get praiseEndDescription => _gen.praise_end_description;
+  String segmentCounter(int segment) => _gen.segment_counter(segment);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
