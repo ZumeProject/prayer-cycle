@@ -18,11 +18,27 @@ class _PrayerTimerState extends State<PrayerTimer> {
   Timer? _timer;
   final AudioPlayer _audioPlayer = AudioPlayer();
   final PageController _pageController = PageController();
+  bool _segmentsInitialized = false;
 
   @override
   void initState() {
     super.initState();
     _loadBeepSound();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (!_segmentsInitialized) {
+      _initializeSegments();
+      _segmentsInitialized = true;
+    }
+  }
+
+  @override
+  void didUpdateWidget(PrayerTimer oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Reinitialize segments when the locale changes
     _initializeSegments();
   }
 
@@ -140,16 +156,6 @@ class _PrayerTimerState extends State<PrayerTimer> {
     });
   }
 
-  void _resetTimer() {
-    _timer?.cancel();
-    setState(() {
-      _currentSegment = 0;
-      _pageController.jumpToPage(0);
-      _timeRemaining = 300;
-      _isRunning = false;
-    });
-  }
-
   Future<void> _playBeep() async {
     await _audioPlayer.play(AssetSource('sounds/beep.mp3'));
   }
@@ -250,15 +256,6 @@ class _PrayerTimerState extends State<PrayerTimer> {
                   onPressed: _pauseTimer,
                   child: Text(localizations.stopButton),
                 ),
-              const SizedBox(width: 16),
-              ElevatedButton(
-                onPressed: _resetTimer,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Theme.of(context).colorScheme.error,
-                  foregroundColor: Theme.of(context).colorScheme.onError,
-                ),
-                child: const Text('Reset'),
-              ),
             ],
           ),
         ],
