@@ -36,23 +36,34 @@ class StorageService extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<void> addPerson(String name, Status status) async {
+  Future<void> addPerson(String name, String email, {String? phone, String? notes}) async {
     final id = DateTime.now().millisecondsSinceEpoch.toString();
-    final person = Person(id: id, name: name, status: status);
+    final person = Person(
+      id: id,
+      name: name,
+      email: email,
+      phone: phone,
+      notes: notes,
+    );
     
     _people.add(person);
     await _savePeople();
   }
 
-  Future<void> updatePerson(String id, {String? name, Status? status}) async {
+  Future<void> updatePerson(String id, {String? name, String? email, String? phone, String? notes}) async {
     final index = _people.indexWhere((person) => person.id == id);
     
     if (index != -1) {
-      _people[index] = _people[index].copyWith(
-        name: name,
-        status: status,
+      final currentPerson = _people[index];
+      final updatedPerson = Person(
+        id: currentPerson.id,
+        name: name ?? currentPerson.name,
+        email: email ?? currentPerson.email,
+        phone: phone ?? currentPerson.phone,
+        notes: notes ?? currentPerson.notes,
       );
       
+      _people[index] = updatedPerson;
       await _savePeople();
     }
   }
