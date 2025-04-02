@@ -45,5 +45,22 @@
   "listen_title": "SŁUCHANIE",
   "listen_description": "Spędź czas łącząc rzeczy, które przeczytałeś, rzeczy, o które się modliłeś i rzeczy, które śpiewałeś, i zobacz, jak Pan łączy je wszystkie, aby do Ciebie przemówić.",
   "praise_end_title": "UWIELBIANIE",
-  "praise_end_description": "Uwielbiaj Pana za czas, który spędziłeś z Nim i za wrażenia, które Ci dał. Uwielbiaj Go za Jego chwalebne przymioty."
+  "praise_end_description": "Uwielbiaj Pana za czas, który spędziłeś z Nim i za wrażenia, które Ci dał. Uwielbiaj Go za Jego chwalebne przymioty.",
+  "home": "Strona główna",
+  "profile_title": "Profil",
+  "delete_all_title": "Usuń wszystko",
+  "unbeliever": "Niewierzący",
+  "believer": "Wierzący",
+  "unknown": "Nieznany",
+  "add_person_hint": "Dodaj osobę do modlitwy",
+  "save": "Zapisz",
+  "cancel": "Anuluj",
+  "delete": "Usuń",
+  "delete_confirmation": "Czy na pewno chcesz to usunąć?",
+  "delete_all": "Usuń wszystko",
+  "delete_all_confirmation": "Czy na pewno chcesz usunąć wszystko?",
+  "yes": "Tak",
+  "no": "Nie",
+  "menu": "Menu",
+  "profile": "Profil"
 } 

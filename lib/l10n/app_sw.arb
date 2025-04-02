@@ -45,5 +45,22 @@
   "listen_title": "SIKILIZA",
   "listen_description": "Tumia muda kuchanganya mambo uliyosoma, mambo uliyosali, na mambo uliyoimba, na uone jinsi Bwana anavyovichanganya vyote pamoja kusema nawe.",
   "praise_end_title": "SIFA",
-  "praise_end_description": "Sifu Bwana kwa muda uliokuwa nao pamoja naye na fikra alizokupa. Msimu kwa sifa zake zilizoheshimiwa."
+  "praise_end_description": "Sifu Bwana kwa muda uliokuwa nao pamoja naye na fikra alizokupa. Msimu kwa sifa zake zilizoheshimiwa.",
+  "home": "Nyumbani",
+  "profile_title": "Wasifu",
+  "delete_all_title": "Futa Yote",
+  "unbeliever": "Asiyeamini",
+  "believer": "Muumini",
+  "unknown": "Haijulikani",
+  "add_person_hint": "Ongeza mtu kwa sala",
+  "save": "Hifadhi",
+  "cancel": "Ghairi",
+  "delete": "Futa",
+  "delete_confirmation": "Je, unataka kufuta hii?",
+  "delete_all": "Futa Yote",
+  "delete_all_confirmation": "Je, unataka kufuta yote?",
+  "yes": "Ndiyo",
+  "no": "Hapana",
+  "menu": "Menyu",
+  "profile": "Wasifu"
 } 

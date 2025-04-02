@@ -45,5 +45,22 @@
   "listen_title": "ማዳመጥ",
   "listen_description": "ያነበቡትን ነገሮች፣ የጸለዩትን ነገሮች እና የዘመሩትን ነገሮች በማዋሃድ ጊዜ ያሳልፉ እና ጌታ እነዚህን ሁሉ አንድ ላይ አድርጎ እንዴት እንደሚናገርዎት ይመልከቱ።",
   "praise_end_title": "ምስጋና",
-  "praise_end_description": "ከእርሱ ጋር ላሳለፉት ጊዜ እና ለሰጥዎት ግንዛቤዎች ጌታን ያመስግኑ። ለክቡር ባህርያቱ ያመስግኑት።"
+  "praise_end_description": "ከእርሱ ጋር ላሳለፉት ጊዜ እና ለሰጥዎት ግንዛቤዎች ጌታን ያመስግኑ። ለክቡር ባህርያቱ ያመስግኑት።",
+  "home": "ዋና ገጽ",
+  "profile_title": "መገለጫ",
+  "delete_all_title": "ሁሉንም ሰርዝ",
+  "unbeliever": "አልታመነ",
+  "believer": "አመነ",
+  "unknown": "የማይታወቅ",
+  "add_person_hint": "ለጸሎት ሰው ያክል",
+  "save": "አስቀምጥ",
+  "cancel": "ሰርዝ",
+  "delete": "ሰርዝ",
+  "delete_confirmation": "ይህን መሰረዝ እንደሚፈልጉ እርግጠኛ ነዎት?",
+  "delete_all": "ሁሉንም ሰርዝ",
+  "delete_all_confirmation": "ሁሉንም ነገር መሰረዝ እንደሚፈልጉ እርግጠኛ ነዎት?",
+  "yes": "አዎ",
+  "no": "አይ",
+  "menu": "ምናሌ",
+  "profile": "መገለጫ"
 } 

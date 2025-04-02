@@ -45,5 +45,22 @@
   "listen_title": "FẸ́TÍ",
   "listen_description": "Fi àkókò kan jọ àwọn nǹkan tí o ti ká, àwọn nǹkan tí o ti dúpẹ́ fún, àti àwọn nǹkan tí o ti kọrín, kí o sì rí bí Olúwa ṣe ń jọ wọn jọ láti sọ̀rọ̀ pẹ̀lú ọ.",
   "praise_end_title": "ÌYÍN",
-  "praise_end_description": "Yín Olúwa fún àkókò tí o ti fi dúró pẹ̀lú Ọ́ àti àwọn ìròyìn tí Ọ́ ti fi hàn fún ọ. Yín Ọ́ fún àwọn àwọn ìwà rere tí Ọ́ ní."
+  "praise_end_description": "Yín Olúwa fún àkókò tí o ti fi dúró pẹ̀lú Ọ́ àti àwọn ìròyìn tí Ọ́ ti fi hàn fún ọ. Yín Ọ́ fún àwọn àwọn ìwà rere tí Ọ́ ní.",
+  "home": "Ilé",
+  "profile_title": "Profáílì",
+  "delete_all_title": "Pa Gbogbo Rẹ́",
+  "unbeliever": "Aláìgbàgbọ́",
+  "believer": "Onígbàgbọ́",
+  "unknown": "Aìmọ̀",
+  "add_person_hint": "Fún Adura, Fi Ẹnìkan Kún",
+  "save": "Fi Pamọ́",
+  "cancel": "Fagilé",
+  "delete": "Pa",
+  "delete_confirmation": "Ṣé o fẹ́ pa rẹ́?",
+  "delete_all": "Pa Gbogbo",
+  "delete_all_confirmation": "Ṣé o fẹ́ pa gbogbo rẹ́?",
+  "yes": "Bẹ́ẹ̀",
+  "no": "Bẹ́ẹ̀ kọ́",
+  "menu": "Àtòjọ",
+  "profile": "Profáílì"
 } 
