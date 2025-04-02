@@ -45,5 +45,22 @@
   "listen_title": "LẮNG NGHE",
   "listen_description": "Dành thời gian kết hợp những điều bạn đã đọc, những điều bạn đã cầu nguyện và những điều bạn đã hát, và xem Chúa kết hợp tất cả chúng như thế nào để phán với bạn.",
   "praise_end_title": "NGỢI KHEN",
-  "praise_end_description": "Ngợi khen Chúa về thời gian bạn đã có để ở với Ngài và những ấn tượng Ngài đã ban cho bạn. Ngợi khen Ngài về những thuộc tính vinh quang của Ngài."
+  "praise_end_description": "Ngợi khen Chúa về thời gian bạn đã có để ở với Ngài và những ấn tượng Ngài đã ban cho bạn. Ngợi khen Ngài về những thuộc tính vinh quang của Ngài.",
+  "home": "Trang chủ",
+  "profile_title": "Hồ sơ",
+  "delete_all_title": "Xóa tất cả",
+  "unbeliever": "Chưa tin",
+  "believer": "Đã tin",
+  "unknown": "Không xác định",
+  "add_person_hint": "Thêm người cầu nguyện",
+  "save": "Lưu",
+  "cancel": "Hủy",
+  "delete": "Xóa",
+  "delete_confirmation": "Bạn có chắc chắn muốn xóa không?",
+  "delete_all": "Xóa tất cả",
+  "delete_all_confirmation": "Bạn có chắc chắn muốn xóa tất cả không?",
+  "yes": "Có",
+  "no": "Không",
+  "menu": "Menu",
+  "profile": "Hồ sơ"
 } 

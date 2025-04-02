@@ -45,5 +45,22 @@
   "listen_title": "聞く",
   "listen_description": "あなたが読んだこと、祈ったこと、歌ったことを統合する時間を過ごし、主がそれらすべてをどのようにまとめてあなたに語ってくださるかを見てください。",
   "praise_end_title": "賛美",
-  "praise_end_description": "主と過ごした時間と主が与えてくださった印象について主を賛美してください。主の栄光ある御性質について賛美してください。"
+  "praise_end_description": "主と過ごした時間と主が与えてくださった印象について主を賛美してください。主の栄光ある御性質について賛美してください。",
+  "home": "ホーム",
+  "profile_title": "プロフィール",
+  "delete_all_title": "すべて削除",
+  "unbeliever": "未信者",
+  "believer": "信者",
+  "unknown": "不明",
+  "add_person_hint": "祈りの対象となる人を追加",
+  "save": "保存",
+  "cancel": "キャンセル",
+  "delete": "削除",
+  "delete_confirmation": "これを削除してもよろしいですか？",
+  "delete_all": "すべて削除",
+  "delete_all_confirmation": "すべてを削除してもよろしいですか？",
+  "yes": "はい",
+  "no": "いいえ",
+  "menu": "メニュー",
+  "profile": "プロフィール"
 } 

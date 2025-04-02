@@ -45,5 +45,22 @@
   "listen_title": "OUVIR",
   "listen_description": "Passe tempo mesclando as coisas que você leu, as coisas pelas quais orou e as coisas que cantou, e veja como o Senhor reúne todas elas para falar com você.",
   "praise_end_title": "LOUVOR",
-  "praise_end_description": "Louvem ao Senhor pelo tempo que você teve para passar com Ele e pelas impressões que Ele lhe deu. Louve-O por Seus atributos gloriosos."
+  "praise_end_description": "Louvem ao Senhor pelo tempo que você teve para passar com Ele e pelas impressões que Ele lhe deu. Louve-O por Seus atributos gloriosos.",
+  "home": "Início",
+  "profile_title": "Perfil",
+  "delete_all_title": "Excluir Tudo",
+  "unbeliever": "Não Crente",
+  "believer": "Crente",
+  "unknown": "Desconhecido",
+  "add_person_hint": "Adicionar Pessoa para Oração",
+  "save": "Salvar",
+  "cancel": "Cancelar",
+  "delete": "Excluir",
+  "delete_confirmation": "Tem certeza que deseja excluir?",
+  "delete_all": "Excluir Tudo",
+  "delete_all_confirmation": "Tem certeza que deseja excluir tudo?",
+  "yes": "Sim",
+  "no": "Não",
+  "menu": "Menu",
+  "profile": "Perfil"
 } 

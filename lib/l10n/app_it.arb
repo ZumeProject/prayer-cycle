@@ -45,5 +45,22 @@
   "listen_title": "Ascolto",
   "listen_description": "Passa del tempo unendo le cose che hai letto, le cose per cui hai pregato e le cose che hai cantato, e vedi come il Signore le riunisce tutte per parlarti.",
   "praise_end_title": "Lode",
-  "praise_end_description": "Loda il Signore per il tempo che hai passato con Lui e le impressioni che ti ha dato. Lodalo per i suoi gloriosi attributi."
+  "praise_end_description": "Loda il Signore per il tempo che hai passato con Lui e le impressioni che ti ha dato. Lodalo per i suoi gloriosi attributi.",
+  "home": "Home",
+  "profile_title": "Profilo",
+  "delete_all_title": "Elimina Tutto",
+  "unbeliever": "Non Credente",
+  "believer": "Credente",
+  "unknown": "Sconosciuto",
+  "add_person_hint": "Aggiungi una persona per cui pregare",
+  "save": "Salva",
+  "cancel": "Annulla",
+  "delete": "Elimina",
+  "delete_confirmation": "Sei sicuro di voler eliminare questo?",
+  "delete_all": "Elimina Tutto",
+  "delete_all_confirmation": "Sei sicuro di voler eliminare tutto?",
+  "yes": "Sì",
+  "no": "No",
+  "menu": "Menu",
+  "profile": "Profilo"
 } 

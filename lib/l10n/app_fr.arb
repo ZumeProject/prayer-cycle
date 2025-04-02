@@ -45,5 +45,22 @@
   "listen_title": "ÉCOUTER",
   "listen_description": "Passez du temps à fusionner les choses que vous avez lues, les choses pour lesquelles vous avez prié et les choses que vous avez chantées, et voyez comment le Seigneur les rassemble toutes pour vous parler.",
   "praise_end_title": "LOUANGE",
-  "praise_end_description": "Louez le Seigneur pour le temps que vous avez passé avec lui et les impressions qu'il vous a données. Louez-le pour ses attributs glorieux."
+  "praise_end_description": "Louez le Seigneur pour le temps que vous avez passé avec lui et les impressions qu'il vous a données. Louez-le pour ses attributs glorieux.",
+  "home": "Accueil",
+  "profile_title": "Profil",
+  "delete_all_title": "Tout Supprimer",
+  "unbeliever": "Non-croyant",
+  "believer": "Croyant",
+  "unknown": "Inconnu",
+  "add_person_hint": "Ajouter une personne pour qui prier",
+  "save": "Enregistrer",
+  "cancel": "Annuler",
+  "delete": "Supprimer",
+  "delete_confirmation": "Êtes-vous sûr de vouloir supprimer ceci ?",
+  "delete_all": "Tout Supprimer",
+  "delete_all_confirmation": "Êtes-vous sûr de vouloir tout supprimer ?",
+  "yes": "Oui",
+  "no": "Non",
+  "menu": "Menu",
+  "profile": "Profil"
 } 

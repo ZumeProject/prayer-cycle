@@ -45,5 +45,22 @@
   "listen_title": "ZUHÖREN",
   "listen_description": "Verbringen Sie Zeit damit, die Dinge zu verbinden, die Sie gelesen haben, die Dinge, für die Sie gebetet haben, und die Dinge, die Sie gesungen haben, und sehen Sie, wie der Herr sie alle zusammenbringt, um zu Ihnen zu sprechen.",
   "praise_end_title": "LOB",
-  "praise_end_description": "Loben Sie den Herrn für die Zeit, die Sie mit Ihm verbringen durften, und für die Eindrücke, die Er Ihnen gegeben hat. Loben Sie Ihn für Seine herrlichen Eigenschaften."
+  "praise_end_description": "Loben Sie den Herrn für die Zeit, die Sie mit Ihm verbringen durften, und für die Eindrücke, die Er Ihnen gegeben hat. Loben Sie Ihn für Seine herrlichen Eigenschaften.",
+  "home": "Startseite",
+  "profile_title": "Profil",
+  "delete_all_title": "Alles Löschen",
+  "unbeliever": "Ungläubig",
+  "believer": "Gläubig",
+  "unknown": "Unbekannt",
+  "add_person_hint": "Fügen Sie eine Person hinzu, für die Sie beten möchten",
+  "save": "Speichern",
+  "cancel": "Abbrechen",
+  "delete": "Löschen",
+  "delete_confirmation": "Sind Sie sicher, dass Sie dies löschen möchten?",
+  "delete_all": "Alles Löschen",
+  "delete_all_confirmation": "Sind Sie sicher, dass Sie alles löschen möchten?",
+  "yes": "Ja",
+  "no": "Nein",
+  "menu": "Menü",
+  "profile": "Profil"
 } 

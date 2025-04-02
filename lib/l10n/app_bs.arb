@@ -45,5 +45,22 @@
   "listen_title": "SLUŠANJE",
   "listen_description": "Provedite vrijeme spajajući stvari koje ste pročitali, stvari za koje ste se molili i stvari koje ste pjevali i vidite kako Gospod sve to spaja da vam govori.",
   "praise_end_title": "SLAVLJENJE",
-  "praise_end_description": "Slavite Gospoda za vrijeme koje ste proveli s Njim i utiske koje vam je dao. Slavite Ga za Njegove slavne osobine."
+  "praise_end_description": "Slavite Gospoda za vrijeme koje ste proveli s Njim i utiske koje vam je dao. Slavite Ga za Njegove slavne osobine.",
+  "home": "Početna",
+  "profile_title": "Profil",
+  "delete_all_title": "Obriši Sve",
+  "unbeliever": "Nevernik",
+  "believer": "Vjernik",
+  "unknown": "Nepoznato",
+  "add_person_hint": "Dodajte osobu za koju ćete se moliti",
+  "save": "Sačuvaj",
+  "cancel": "Otkaži",
+  "delete": "Obriši",
+  "delete_confirmation": "Da li ste sigurni da želite ovo obrisati?",
+  "delete_all": "Obriši Sve",
+  "delete_all_confirmation": "Da li ste sigurni da želite sve obrisati?",
+  "yes": "Da",
+  "no": "Ne",
+  "menu": "Meni",
+  "profile": "Profil"
 } 

@@ -3,11 +3,16 @@ import '../l10n/app_localizations.dart';
 import '../utils/app_theme.dart';
 import 'language_selector.dart';
 
-class DrawerMenu extends StatelessWidget {
+class DrawerMenu extends StatefulWidget {
   final Function(Locale)? setLocale;
 
   const DrawerMenu({super.key, required this.setLocale});
 
+  @override
+  State<DrawerMenu> createState() => _DrawerMenuState();
+}
+
+class _DrawerMenuState extends State<DrawerMenu> {
   @override
   Widget build(BuildContext context) {
     final localizations = AppLocalizations.of(context);
@@ -41,7 +46,7 @@ class DrawerMenu extends StatelessWidget {
             title: localizations.language,
             onTap: () {
               Navigator.pop(context);
-              LanguageSelector.show(context, setLocale);
+              LanguageSelector.show(context, widget.setLocale);
             },
           ),
         ],

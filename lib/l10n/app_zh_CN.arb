@@ -45,5 +45,22 @@
   "listen_title": "聆听",
   "listen_description": "花时间将您所读的、所祷告的和所唱的结合起来，看看主如何将它们全部整合起来向您说话。",
   "praise_end_title": "赞美",
-  "praise_end_description": "为与主共处的时间和祂给您的感动赞美主。为祂荣耀的属性赞美祂。"
+  "praise_end_description": "为与主共处的时间和祂给您的感动赞美主。为祂荣耀的属性赞美祂。",
+  "home": "首页",
+  "profile_title": "个人资料",
+  "delete_all_title": "删除全部",
+  "unbeliever": "非信徒",
+  "believer": "信徒",
+  "unknown": "未知",
+  "add_person_hint": "添加代祷对象",
+  "save": "保存",
+  "cancel": "取消",
+  "delete": "删除",
+  "delete_confirmation": "确定要删除吗？",
+  "delete_all": "删除全部",
+  "delete_all_confirmation": "确定要删除所有内容吗？",
+  "yes": "是",
+  "no": "否",
+  "menu": "菜单",
+  "profile": "个人资料"
 } 

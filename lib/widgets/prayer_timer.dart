@@ -11,14 +11,13 @@ class PrayerTimer extends StatefulWidget {
 }
 
 class _PrayerTimerState extends State<PrayerTimer> {
-  late final List<Map<String, dynamic>> _segments;
+  List<Map<String, dynamic>> _segments = [];
   int _currentSegment = 0;
   int _timeRemaining = 300; // 5 minutes in seconds
   bool _isRunning = false;
   Timer? _timer;
   final AudioPlayer _audioPlayer = AudioPlayer();
   final PageController _pageController = PageController();
-  bool _segmentsInitialized = false;
 
   @override
   void initState() {
@@ -29,10 +28,7 @@ class _PrayerTimerState extends State<PrayerTimer> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    if (!_segmentsInitialized) {
-      _initializeSegments();
-      _segmentsInitialized = true;
-    }
+    _initializeSegments();
   }
 
   @override
@@ -167,6 +163,7 @@ class _PrayerTimerState extends State<PrayerTimer> {
   }
 
   Widget _buildSegmentPage(int index) {
+    final segments = _segments;
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -178,7 +175,7 @@ class _PrayerTimerState extends State<PrayerTimer> {
           ClipRRect(
             borderRadius: BorderRadius.circular(8),
             child: Image.asset(
-              _segments[index]['image'] as String,
+              segments[index]['image'] as String,
               height: 200,
               width: double.infinity,
               fit: BoxFit.cover,
@@ -186,7 +183,7 @@ class _PrayerTimerState extends State<PrayerTimer> {
           ),
           const SizedBox(height: 16),
           Text(
-            _segments[index]['title'] as String,
+            segments[index]['title'] as String,
             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               fontWeight: FontWeight.bold,
               color: Theme.of(context).colorScheme.primary,
@@ -195,7 +192,7 @@ class _PrayerTimerState extends State<PrayerTimer> {
           ),
           const SizedBox(height: 16),
           Text(
-            _segments[index]['description'] as String,
+            segments[index]['description'] as String,
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyLarge,
           ),
@@ -207,6 +204,7 @@ class _PrayerTimerState extends State<PrayerTimer> {
   @override
   Widget build(BuildContext context) {
     final localizations = AppLocalizations.of(context);
+    final segments = _segments;
     
     return Padding(
       padding: const EdgeInsets.all(16.0),
@@ -236,7 +234,7 @@ class _PrayerTimerState extends State<PrayerTimer> {
                   }
                 });
               },
-              itemCount: _segments.length,
+              itemCount: segments.length,
               itemBuilder: (context, index) {
                 return _buildSegmentPage(index);
               },

@@ -11,21 +11,25 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(localizations.homeTitle),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.language),
-            tooltip: localizations.languageSelection,
-            onPressed: () => LanguageSelector.show(context, setLocale),
+    return Builder(
+      builder: (context) {
+        final localizations = AppLocalizations.of(context);
+        
+        return Scaffold(
+          appBar: AppBar(
+            title: Text(localizations.homeTitle),
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.language),
+                tooltip: localizations.languageSelection,
+                onPressed: () => LanguageSelector.show(context, setLocale),
+              ),
+            ],
           ),
-        ],
-      ),
-      drawer: DrawerMenu(setLocale: setLocale),
-      body: const PrayerTimer(),
+          drawer: DrawerMenu(setLocale: setLocale),
+          body: const PrayerTimer(),
+        );
+      },
     );
   }
 } 
